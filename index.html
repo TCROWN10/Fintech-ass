@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>TCROWN</title>
+  </head>
+  <body class="bg-blue-800 text-gray-200">
+    <!-- header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-blue-600 shadow-lg">
+      <nav
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <a href="#"  class="text-2xl font-bold">
+          <i class="fas fa-user inline-block h-10 w-10 mr-2"></i>
+          DEV TCROWN
+        </a>
+        <div class="lg:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <!-- navbar links -->
+        <div id="menu" class="hidden lg:flex space-x-6">
+          <a href="#" class="hover:text-gray-400 transition-colors duration-300"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="hover:text-gray-400 transition-colors duration-300"
+            >About</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:text-gray-400 transition-colors duration-300"
+            >Portfolio</a
+          >
+          <a
+            href="#testimonials"
+            class="hover:text-gray-400 transition-colors duration-300"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-gray-400 transition-colors duration-300"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero secion -->
+      <section class="h-screen flex items-center justify-center relative">
+        <div class="text-center">
+          <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+          TCROWN Portfolio
+          </h1>
+          <p class="text-lg lg:text-xl mb-8">
+            I'm a motivated professional whose expertise is in HTML5,CSS3, Javascript, TailwindCSS
+          </p>
+          <a
+            href="#about"
+            class="inline-block bg-blue-900 hover:bg-gray-700 text-gray-200 font-medium py-3 px-6 rounded-md transition-colors duration-300"
+          >
+            Explore
+          </a>
+        </div>
+
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <div class="bubble-animation"></div>
+          <div class="bubble-animation" style="top: 20%; left: 30%"></div>
+          <div class="bubble-animation" style="bottom: 25%; left: 50%"></div>
+          <div class="bubble-animation" style="top: 50%; left: 90%"></div>
+          <div class="bubble-animation" style="top: 60%; left: 70%"></div>
+          <div class="bubble-animation" style="top: 80%; left: 10%"></div>
+          <div class="bubble-animation" style="top: 90%; left: 80%"></div>
+        </div>
+      </section>
+      
+      <!-- about section -->
+      <section id="about" class="py-20 bg-blue-900">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-8">About Me</h2>
+              <p class="mb-6">
+                Hello, I'm a passionate web developer dedicated to creating seamless online experiences. With a blend of creativity and technical expertise, I specialize in crafting custom websites that not only look great but also deliver exceptional user experiences.
+              </p>
+              
+            </div>
+            <div class="relative">
+              <img
+                src="/Images/Tcrown10.jpeg"
+                alt="About Image"
+                class="w-full h-full object-cover rounded-md shadow-lg mx-auto"
+                style="width: 500px; height: 500px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="py-20 bg-blue-900 cursor-pointer">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center">My Portfolio</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-blue-800 rounded-md shadow-lg overflow-hidden">
+              <img
+                src="/Images/Flex-layout.png"
+                alt="Portfolio Item 1"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Flex-box-layout</h3>
+                <p>
+                  Check it out
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-blue-800 rounded-md shadow-lg overflow-hidden">
+              <img
+                src="/Images/Multi-form.png"
+                alt="Portfolio Item 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Multi-form</h3>
+                <p>Check it out</p>
+              </div>
+            </div>
+
+            <div class="bg-blue-800 rounded-md shadow-lg overflow-hidden">
+              <img
+                src="/Images/Youtube-clone.png"
+                alt="Portfolio Item 3"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Youtube-clone</h3>
+                <p>
+                  This is a youtube clone where you can watch any movie of
+                  your choice
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="py-20 bg-blue-800 cursor-pointer">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center">Testimonials</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-blue-700 rounded-md shadow-lg transform transition-transform duration-300 hover:scale-105"
+            >
+              <div class="flex items-center p-4 space-x-4">
+                <div class="flex-shrink-0">
+                  <img
+                    src="/Images/Stephen.png"
+                    alt="Testimonial 1"
+                    class="w-12 h-12 rounded-full"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">Dr Stephen Alinrodoye</h3>
+                  <p class="text-gray-400">Blockchain developer</p>
+                </div>
+              </div>
+              <div class="p-4">
+                <p>
+                  " Tobi is an amazing frontend developer. His work is exceptional, 
+                  delivering user-friendly interfaces and efficient coding.
+                   I highly recommend you working with him!"
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-blue-700 rounded-md shadow-lg transform transition-transform duration-300 hover:scale-105"
+            >
+              <div class="flex items-center p-4 space-x-4">
+                <div class="flex-shrink-0">
+                  <img
+                    src="/Images/Mayowa.png"
+                    alt="Testimonial 2"
+                    class="w-12 h-12 rounded-full"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">Mayowa Obisesan</h3>
+                  <p class="text-gray-400">Web3 Developer</p>
+                </div>
+              </div>
+              <div class="p-4">
+                <p>
+                  "Working with Tobi has been a pleasure. 
+                  His frontend skills are top notch resulting 
+                  in seamless and innovative solutions. 
+                  I highly value his skills and collaboration."
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-blue-700 rounded-md shadow-lg transform transition-transform duration-300 hover:scale-105"
+            >
+              <div class="flex items-center p-4 space-x-4">
+                <div class="flex-shrink-0">
+                  <img
+                    src="/Images/Rukky.png"
+                    alt="Testimonial 3"
+                    class="w-12 h-12 rounded-full"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">Rukky</h3>
+                  <p class="text-gray-400">Frontend developer</p>
+                </div>
+              </div>
+              <div class="p-4">
+                <p>
+                  "Collaborating with Tobi has been inspiring. His attention to detail and creativity in frontend design consistently elevate our projects. I appreciate his dedication and expertise in delivering exceptional user experiences."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-blue-800 relative">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
+          <form class="max-w-md mx-auto">
+            <div class="mb-4">
+              <label for="name" class="block font-medium mb-2">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full bg-blue-700 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block font-medium mb-2">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full bg-blue-700 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block font-medium mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full bg-blue-700 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-700 hover:bg-gray-600 text-gray-200 font-medium py-2 px-4 rounded-md transition-colors duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+          <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div class="bubble-animation"></div>
+            <div class="bubble-animation" style="top: 20%; left: 30%"></div>
+            <div class="bubble-animation" style="top: 60%; left: 70%"></div>
+            <div class="bubble-animation" style="top: 80%; left: 10%"></div>
+            <div class="bubble-animation" style="top: 50%; left: 80%"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-blue-900 py-6">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <p class="text-gray-400">
+          &copy; 2024 WebDeveloper All rights reserved.
+        </p>
+        <div class="space-x-4">
+          <a
+            href="https://web.facebook.com/TCROWN62"
+            class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://x.com/_TCROWN10"
+            class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/bolaji-oluwatobi-a15a7b29b/"
+            class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/TCROWN10/"
+            class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
